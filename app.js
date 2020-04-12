@@ -51,7 +51,7 @@ class UI {
 
         }
         localStorage.setItem('tasks', JSON.stringify(tasks));
-        location.reload()
+        event.parentElement.parentElement.remove()
     }
 
     showMessage(message, cssClass) {
